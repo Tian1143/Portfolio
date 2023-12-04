@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid {
+    margin: 150px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    transform-origin: center; /* Set the rotation origin to the center */
+}
+
+.grid-block {
+    width: 30%; 
+    min-height: 20px;
+    padding: 1rem;
+    box-sizing: border-box;
+    transform: rotate(-15deg); 
+}
+
+.tile-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    transition: transform 0.5s ease;
+}
+
+.tile-link:hover .tile-img {
+    transform: scale(1.05);
+    box-shadow: 5px 5px rgba(161, 159, 113, 0.4),
+    10px 10px rgba(115, 111, 80, 0.3), 15px 15px rgba(61, 61, 43, 0.2),
+    20px 20px rgba(244, 170, 200, 0.1), 25px 25px rgba(33, 31, 23, 0.05);
+
+}

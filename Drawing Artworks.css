@@ -1,0 +1,90 @@
+/* CSS Document */
+body{
+	background-image: url('images/DAbackground.jpg');
+	background-size:contain; 
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bannerImage{
+			width: 100%;
+			height: 800px;
+/*	cover: wdith ad height are frame, image does not distort(may be small in parts)		*/
+			object-fit: cover;
+		}
+@media only screen and (min-width: 992px) {
+     .fadeshowartwork2{
+        display:none;
+    }
+}
+/*only disappear in small*/
+@media only screen and (max-width: 768px) {
+     .fadeshowartwork1,.fadeshowartwork2{
+        display:none;
+    }
+}
+@media only screen and (max-width: 992px) {
+     .fadeshowartwork3{
+        display:none;
+    }
+}
+/*only show in small*/
+@media only screen and (max-width: 768px) {
+    .fadeshowline,.fadeshow{
+        display:none;
+    }
+}
+	.spacedivDA{
+		height: 300px;
+		}
+	.DAmainPart{
+	font-family: 'Covered By Your Grace';
+}
+	.DATopic{
+		font-weight: 400;
+		font-size: 7.5vw;
+		text-transform: capitalize;
+		line-height: 100%;
+		padding-left:3%;
+	}
+	.DAbutton{
+	color: #FFFFFF;
+	font-family: 'Covered By Your Grace';
+	background: #2C2C2C;
+	border: 5px solid #FFFFFF;
+	box-shadow: -9px 4px 0px gray;
+	}
+	.DAButtonDiv{
+	margin-top: 3%;
+	margin-bottom: 3%;
+	font-size: 3vw;
+	text-align: center;
+/*	padding: 3%;*/
+	}
+	.DAbutton:hover{
+	transform: scale(1.2);
+	color: black;
+	background: white;
+	border: 5px solid black;
+	}
+
+	.DAsubtopicDiv{
+	text-align: center;
+	}
+	.DAsubtopic{
+	font-style: normal;
+	font-size: 5vw;
+	line-height: 100%;
+	letter-spacing: 0.2em;
+	}
+.DartworksDiv{
+	border: 1px solid rgba(255,255,255,1.00);
+}
+.Dartworks{
+	width: 100%;
+}
+
+
+
+
+
+

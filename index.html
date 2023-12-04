@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="Keywords" content="HTML, CSS, JAVA">
+<meta name="author" content="Tian">
+<meta name="robots" content="noidex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-grid.css">
+<link rel="stylesheet" href="css/grid.css">	
+<link rel="stylesheet" href="Home Page css.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+        /* Open burger bar*/
+        function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+        }
+
+        /* Close burger bar*/
+        function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+        }
+	
+	let slideIndex = 1;
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        let i;
+        const slides = document.getElementsByClassName("slide");
+
+        if (n > slides.length) {
+            slideIndex = 1;
+        }
+
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+    }
+	 // Initial slide display
+		document.addEventListener("DOMContentLoaded", function () {
+			showSlides(slideIndex);
+		});
+	function linkedin() {
+  	alert("www.linkedin.com/in/tian-jin-b8b965236");
+	}
+	function Ins() {
+  	alert("https://instagram.com/tracytiannn?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr");
+	}
+	function Mail() {
+  	alert("jintian1143@gmail.com");
+	}
+	</script>
+</head>
+
+<body>
+<script src="js/bootstrap.bundle.min.js"></script>
+	<div class="container-fluid">
+	<header>
+		<div class="row">
+			<div class="col-lg-3 col-md-4 col-sm-4">Tian Jin</div>
+			<div class="col-lg-5 fadeshowHeader"></div>			
+			<div class="col-lg-1 col-md-2 col-sm-2 HeaderButton"><img onclick="linkedin()" class="icon"  src="images/nav/4571745.png" alt="linkedin"></div>
+			<div class="col-lg-1 col-md-2 col-sm-2 HeaderButton"><img onclick="Ins()" class="icon" src="images/nav/1600427.png" alt="ins"></div>
+			<div class="col-lg-1 col-md-2 col-sm-2 HeaderButton"><img onclick="Mail()" class="icon" src="images/nav/1442487.png" alt="mail"></div>
+			<div class="col-lg-1 col-md-2 col-sm-2">  <!--Navigatin bar  -->
+			<!-- burger bar icon -->
+            <a href="javascript:void(0);" class="icon" onclick="openNav()"> <i class="fa fa-bars "></i></a>
+        		<!--inside curtain bar  -->
+					<div id="myNav" class="curtain">
+						<!-- curtain content -->
+						<!-- Button to close the curtain navigation -->
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+							<div class="curtain-content">
+								<ul>
+								<li><a href="My resume.html"><span>My resume</span></a></li>
+								<li><a href="Drawing Artworks.html"><span>Drawing Artwoks</span></a></li>
+								<li><a href="Graduate Materials.html"><span>Graduate Materials</span></a></li>
+								<li><a href="Digital Projects.html"><span>Digital Projects</span></a></li>
+								</ul>
+							</div>
+					</div>
+			</div>
+			</div>
+	</header>
+	   <div class="spacediv"></div>
+<div class="slideshow-container">
+		
+   <div class="slide">
+		<div class="row HLayer1">
+			<div class="col-lg-1 col-md-1 col-sm-2 arrow"><a class="prev" onclick="plusSlides(-1)">❮</a></div>
+				<div class="col-lg-2 fadeshowHeaderLine"><hr></div>
+				<div class="col-lg-6 col-md-10 col-sm-8"><span class="HomeTopic">Resume Information</span></div>
+				<div class="col-lg-2 fadeshowHeaderLine"><hr></div>
+			<div class="col-lg-1 col-md-1 col-sm-2 arrow"><a class="next" onclick="plusSlides(1)">❯</a></div>
+		</div>
+	   <div class="spacediv"></div>
+	  	 <div class="row HLayer2">
+			<div class="col-lg-3 col-md-3 col-sm-1"></div>
+			<div class="col-lg-6 col-md-6 col-sm-10"><span class="HomwSubTopic">Education History, Skill, Research, Internship History,etc.</span></div>
+			<div class="col-lg-3 col-md-3 col-sm-1"></div>
+		</div>
+	   <div class="spacediv"></div>
+		<div class="row HLayer3">
+			<div class="col-lg-5 col-md-5 col-sm-3"></div>
+			<div class="col-lg-2 col-md-2 col-sm-6" ><a href="My resume.html" class="LearnMore">Learn More</a></div>	
+			<div class="col-lg-5 col-md-5 col-sm-3"></div>
+		</div>
+	</div>
+   <div class="slide">
+		<div class="row HLayer1">
+			<div class="col-lg-1 col-md-1 col-sm-2 arrow"><a class="prev" onclick="plusSlides(-1)">❮</a></div>
+				<div class="col-lg-2 fadeshowHeaderLine"><hr></div>
+				<div class="col-lg-6 col-md-10 col-sm-8"><span class="HomeTopic">Drawing artworks</span></div>
+				<div class="col-lg-2 fadeshowHeaderLine"><hr></div>
+			<div class="col-lg-1 col-md-1 col-sm-2 arrow"><a class="next" onclick="plusSlides(1)">❯</a></div>
+		</div>
+	   <div class="spacediv"></div>
+	  	 <div class="row HLayer2">
+			<div class="col-lg-3 col-md-3 col-sm-1"></div>
+			<div class="col-lg-6 col-md-6 col-sm-10"><span class="HomwSubTopic">Pastel, Charcoal, Normal drawing paper, Toned paper, etc.</span></div>
+			<div class="col-lg-3 col-md-3 col-sm-1"></div>
+		</div>
+	   <div class="spacediv"></div>
+		<div class="row HLayer3">
+			<div class="col-lg-5 col-md-5 col-sm-3"></div>
+			<div class="col-lg-2 col-md-2 col-sm-6" ><a href="Drawing Artworks.html" class="LearnMore">Learn More</a></div>	
+			<div class="col-lg-5 col-md-5 col-sm-3"></div>
+		</div>
+	</div>
+   <div class="slide">
+		<div class="row HLayer1">
+			<div class="col-lg-1 col-md-1 col-sm-2 arrow"><a class="prev" onclick="plusSlides(-1)">❮</a></div>
+				<div class="col-lg-2 fadeshowHeaderLine"><hr></div>
+				<div class="col-lg-6 col-md-10 col-sm-8"><span class="HomeTopic">Graduate Materials</span></div>
+				<div class="col-lg-2 fadeshowHeaderLine"><hr></div>
+			<div class="col-lg-1 col-md-1 col-sm-2 arrow"><a class="next" onclick="plusSlides(1)">❯</a></div>
+		</div>
+	   <div class="spacediv"></div>
+	  	 <div class="row HLayer2">
+			<div class="col-lg-3 col-md-3 col-sm-1"></div>
+			<div class="col-lg-6 col-md-6 col-sm-10"><span class="HomwSubTopic">Personal Statement, Statement of Purposes, papers, etc.</span></div>
+			<div class="col-lg-3 col-md-3 col-sm-1"></div>
+		</div>
+	   <div class="spacediv"></div>
+		<div class="row HLayer3">
+			<div class="col-lg-5 col-md-5 col-sm-3"></div>
+			<div class="col-lg-2 col-md-2 col-sm-6" ><a href="Graduate Materials.html" class="LearnMore">Learn More</a></div>	
+			<div class="col-lg-5 col-md-5 col-sm-3"></div>
+		</div>
+	</div>   
+	<div class="slide">
+		<div class="row HLayer1">
+			<div class="col-lg-1 col-md-1 col-sm-2 arrow"><a class="prev" onclick="plusSlides(-1)">❮</a></div>
+				<div class="col-lg-2 fadeshowHeaderLine"><hr></div>
+				<div class="col-lg-6 col-md-10 col-sm-8"><span class="HomeTopic">Digital Projects</span></div>
+				<div class="col-lg-2 fadeshowHeaderLine"><hr></div>
+			<div class="col-lg-1 col-md-1 col-sm-2 arrow"><a class="next" onclick="plusSlides(1)">❯</a></div>
+		</div>
+	   <div class="spacediv"></div>
+	  	 <div class="row HLayer2">
+			<div class="col-lg-3 col-md-3 col-sm-1"></div>
+			<div class="col-lg-6 col-md-6 col-sm-10"><span class="HomwSubTopic">HTML websites, digital images,etc.</span></div>
+			<div class="col-lg-3 col-md-3 col-sm-1"></div>
+		</div>
+	   <div class="spacediv"></div>
+		<div class="row HLayer3">
+			<div class="col-lg-5 col-md-5 col-sm-3"></div>
+			<div class="col-lg-2 col-md-2 col-sm-6" ><a href="Digital Projects.html" class="LearnMore">Learn More</a></div>	
+			<div class="col-lg-5 col-md-5 col-sm-3"></div>
+		</div>
+	</div>
+	 
+	</div>
+		</div>
+	</body>
+</html>
