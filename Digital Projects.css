@@ -1,0 +1,45 @@
+/* CSS Document */
+
+@media only screen and (max-width: 768px) {
+		.fadeshow {
+			display:none;
+		}
+	}	
+	@media only screen and (max-width: 576px),(min-width: 992px) {
+		.fadeshow1 {
+			display: none;
+		}
+	}
+	.DPmainPart{
+	font-family: 'Covered By Your Grace';
+	}
+	.DPTopic{
+		font-weight: 400;
+		font-size: 5vw;
+		text-transform: capitalize;
+	}
+	.spacedivDP{
+		height: 120px;
+		}
+
+.Project{
+	width:100%;
+	aspect-ratio : 1 / 0.7;
+}
+.intro{
+	text-align: center;
+	font-weight: 300;
+	font-size: 5vw;
+
+}
+.intro a{
+	text-align: center;
+	font-size: 3vw;
+	text-decoration-line: underline;
+	color: #84A59D;
+}
+.Project{
+	background-color: white;
+	border: 5px solid  rgba(255,255,255,1.00);
+}
+

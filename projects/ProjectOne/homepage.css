@@ -1,0 +1,150 @@
+    body{
+        margin:0;
+        background-image: url("https://media.istockphoto.com/id/544565400/vector/pets-everywhere.jpg?s=612x612&w=0&k=20&c=1VZdW4A5UMhIp6RRGbtDv0OFhC2SHmGKf3KhIlwB73g=");
+    }
+    .header {
+        background-color: #1E1C1A;
+        height:max-content;
+        font-size: 90px;
+        font-weight: 800;
+        line-height:100px;
+        display: flex;
+        font-family: 'Dancing Script', cursive;
+    }
+    .navWord {
+        color: rgba(235, 223, 205, 1);
+        /* align-items: left; */
+        padding: 30px;
+        font-family: 'Dancing Script', cursive;
+
+
+    }
+    .icon{
+        margin-left: auto !important;
+        margin-right: 10px;
+        margin-top: 30px;
+        color: #f5ebeb;
+        font-size: 60px;
+    }
+    .navButton {
+        /* display: inline-block; */
+        /* margin-left: auto !important; */
+        /* margin: 10px; */
+        /* padding: 10px 35px; */
+        text-decoration: none;
+        background-color: rgba(235, 223, 205, 1);
+        border-radius:  10% 30% 50% 70%;
+        outline: none;
+        transition: 0.3s;
+        font-size: 50px;
+        font-weight: 600;
+      }
+      .navButton a{
+        color: inherit;
+        color: #070707; 
+        text-decoration: none;
+      }
+      .navButton:hover{
+        background-color: rgb(49, 47, 44);
+        text-decoration: none;
+    }
+    .navButton a:hover{
+        color: #f5f3eb;
+      }
+ /* The curtain (background) */
+    .curtain {
+        /* Height & width depends on how you want to reveal the overlay */   
+        height: 0;
+        width: 100%;
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        background-color: rgb(0,0,0); /* Black fallback color */
+        background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+        overflow-y: hidden; /* Disable horizontal scroll */
+        transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    }
+    
+    /* Position the content inside the overlay */
+    .curtain-content {
+        position: relative;
+        top: 25%; /* 25% from the top */
+        width: 100%; /* 100% width */
+        text-align: center; /* Centered text/links */
+        margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    }
+    
+    /* The navigation links inside the overlay */
+    .curtain a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block; /* Display block instead of inline */
+        transition: 0.3s; /* Transition effects on hover (color) */
+    }
+    
+    /* When you mouse over the navigation links, change their color */
+    .curtain a:hover, .overlay a:focus {
+        color: #f1f1f1;
+    }
+    
+    /* Position the close button (top right corner) */
+    .curtain .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+    
+    /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+    @media screen and (max-height: 450px) {
+        .curtain a {font-size: 20px}
+        .curtain .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;}
+    }
+    /* main page part */
+    .background-images {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        
+    }
+    
+    .background-images img {
+        position: absolute;
+        object-fit: cover;
+        width: 300px; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+        transition: transform 0.3s;
+    }
+        .background-images img:hover {
+        transform: scale(1.3); /* Increase size on hover */
+        cursor: pointer; /* Change cursor on hover */
+    }
+    .image{
+        width: 10%;
+        float: left;
+        margin-left: 10px;
+    }
+    .navButton2 {
+        /* display: inline-block; */
+        /* margin-left: auto !important; */
+        /* margin: 10px; */
+        /* padding: 10px 35px; */
+        text-decoration: none;
+        background-color: rgba(235, 223, 205, 1);
+        border-radius:  10% ;
+        outline: none;
+        transition: 0.3s;
+        font-size: 50px;
+        font-weight: 600;
+        height: 50%;
+        margin-top: 50px;
+      }

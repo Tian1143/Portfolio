@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tian's studio</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        /* Open burger bar*/
+        function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+        }
+
+        /* Close burger bar*/
+        function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+        }
+
+        //main page part   
+        document.addEventListener('DOMContentLoaded', function() {
+        const numImages = 4;
+        const container = document.querySelector('.background-images');
+
+        const imageSources = [
+        "https://cdn-icons-png.flaticon.com/128/1391/1391308.png",
+        "https://cdn-icons-png.flaticon.com/128/2201/2201716.png",
+        "https://cdn-icons-png.flaticon.com/128/4503/4503838.png",
+        "https://cdn-icons-png.flaticon.com/128/1602/1602171.png",
+        ];
+        const pageNames = [
+        "resume page.html",
+        "Weekly page.html",
+        "Exercise page.html",
+        "artwork page.html"
+        ];
+         for (let i = 0; i < numImages; i++) {
+            const img = document.createElement('img');
+            img.src = imageSources[i];
+
+            const containerWidth = container.clientWidth - 300; 
+            const containerHeight = container.clientHeight - 300; 
+
+            img.style.left = `${Math.random() * containerWidth}px`;
+            img.style.top = `${Math.random() * containerHeight}px`;
+
+            img.title = "Click to go to " + pageNames[i];
+            
+            const link = document.createElement('a');
+            link.href = pageNames[i];;
+            link.appendChild(img);
+
+            container.appendChild(link);            
+        }    
+        });
+        </script>
+</head>
+<body>
+    <header class="header" >
+        <span class="navWord">Tian Jin</span>
+
+        <button class="navButton2" onClick="history.go(0);">Refresh!</button>
+    
+    <!--Navigatin bar  -->
+            <!-- burger bar icon -->
+            <a href="javascript:void(0);" class="icon" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+            </a>
+            <!-- Word -->
+        <!--Home Button  -->
+        <!-- <button type="button" class="navButton"><a href="home page.html">Home</a></button>     -->
+        <!--inside curtain bar  -->
+    <div id="myNav" class="curtain">
+        <!-- curtain content -->
+            <!-- Button to close the curtain navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="curtain-content">
+            <ul>
+            <li><a href="resume page.html"><span>About me</span></a></li>
+            <li><a href="Weekly page.html"><span>Weeklies</span></a></li>
+            <li><a href="Exercise page.html"><span>Exercises</span></a></li>
+            <li><a href="artwork page.html"><span>Artworks</span></a></li>
+            </ul>
+        </div>
+    </div>
+    </header>    
+    <!-- main page part -->
+    <div class="background-images">
+
+    </div>
+</body>
+</html>

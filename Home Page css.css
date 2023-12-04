@@ -1,0 +1,179 @@
+/* CSS Document */
+	div.col, div.col-1, div.col-2, div.col-3, div.col-4, div.col-5, div.col-6, div.col-7, div.col-8, div.col-9, div.col-10, div.col-11, div.col-12, div.col-sm-1, div.col-sm-2, div.col-sm-3, div.col-sm-4, div.col-sm-5, div.col-sm-6, div.col-sm-7, div.col-sm-8, div.col-sm-9, div.col-sm-10, div.col-sm-11, div.col-sm-12, div.col-md-1, div.col-md-2, div.col-md-3, div.col-md-4, div.col-md-5, div.col-md-6, div.col-md-7, div.col-md-8, div.col-md-9, div.col-md-10, div.col-md-11, div.col-md-12, div.col-lg-1, div.col-lg-2, div.col-lg-3, div.col-lg-4, div.col-lg-5, div.col-lg-6, div.col-lg-7, div.col-lg-8, div.col-lg-9, div.col-lg-10, div.col-lg-11, div.col-lg-12 {
+		padding-top: .75rem;
+	padding-bottom: .75rem;
+/*	background-color: lightgray;*/
+/*	border: 1px solid  rgba(255,255,255,1.00);*/
+}
+	body{
+		padding: 0; 
+		margin: 0; 
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background-color: black;
+		font-family: 'Abhaya Libre ExtraBold';
+		font-style: normal;
+		color: #FFFFFF;
+}
+.fadeshowHeaderLine {
+  display: flex;
+  align-items: center;
+}
+
+	hr{
+		width: 100%;
+ 		height:8px;
+		background-color:rgba(255,255,255,1.9);
+		margin: 0 auto;
+}
+
+	.spacediv{
+			height: 120px;
+	}
+    @media only screen and (min-width: 992px) {
+		.spacediv{
+			display: none;
+		}
+	}
+@media only screen and (max-width: 992px) {
+		.fadeshowHeader {
+			display:none;
+		}
+	}	
+@media only screen and (max-width: 768px) {
+		.fadeshowFootor {
+			display:none;
+		}
+	}	
+	header{
+		font-weight: 600;
+		font-size: 5vw;
+		width: 100%;
+		text-align: center;
+			
+}
+	.FootorButton{
+		text-align: center;
+	}
+	.icon{
+		color: aliceblue;
+}
+	
+	.arrow{
+			position: relative;
+		}
+	.prev,.next{
+		position: absolute;
+		bottom:50%;
+		font-weight: 600;
+		font-size: 5vw;
+		line-height: 0px;
+		text-align: center;
+		letter-spacing: 0.1em;
+		color:white; 	
+		text-decoration:none;
+	}
+	.prev:hover,.next:hover,.icon:hover, .fa:hover{
+	transform: scale(1.5);
+	}
+	.LearnMore:hover{
+	color: gray;
+	}
+/* The curtain (background) */
+    .curtain {
+        height: 0;
+        width: 100%;
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+        overflow-y: hidden; /* Disable horizontal scroll */
+        transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay */
+		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    }
+    
+    /* Position the content inside the overlay */
+    .curtain-content {
+        position: relative;
+        top: 25%; /* 25% from the top */
+        width: 100%; /* 100% width */
+        text-align: center; /* Centered text/links */
+        margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    }
+    
+    /* The navigation links inside the overlay */
+    .curtain a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 40px;
+        color: #818181;
+        display: block; /* Display block instead of inline */
+        transition: 0.3s; /* Transition effects on hover (color) */
+    }
+    
+    /* When you mouse over the navigation links, change their color */
+    .curtain a:hover, .overlay a:focus {
+        color: #f1f1f1;
+    }
+    
+    /* Position the close button (top right corner) */
+    .curtain .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+    /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+    @media screen and (max-height: 450px) {
+        .curtain a {font-size: 20px}
+        .curtain .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;}
+    }
+/*
+    @media screen and (max-width: 567px) {
+		.fadeshowHeader{
+			display: none;
+		}
+	}
+*/
+    @media screen and (max-width: 992px) {
+		.fadeshowHeaderLine{
+			display: none;
+		}
+	}
+
+	.HLayer1{
+		text-align: center;
+	}
+	.HLayer2{
+		text-align: center;
+	}
+	.HLayer3{
+		text-align: center;
+	}
+	.HomeTopic{
+	font-weight: 600;
+	font-size: 7.5vw;
+	letter-spacing: 0.05em;
+
+	}
+	.HomwSubTopic{
+	font-weight: 500;
+	font-size: 2.8vw;
+
+	text-align: center;
+	letter-spacing: 0.1em;
+	}
+	.LearnMore{
+	font-weight: 500;
+	font-size: 2.5vw;
+	text-align: center;
+	letter-spacing: 0.1em;
+	color:white; 	
+	text-decoration-line: underline;
+	}

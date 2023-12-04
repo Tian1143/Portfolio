@@ -1,0 +1,48 @@
+/* CSS Document */
+	.GMmainPart{
+		font-family: 'Covered By Your Grace';
+	}
+	.GMTopic{
+	font-weight: 100;
+	font-size: 6vw;
+	text-transform: capitalize;
+	}
+	.GMSubTopic1{
+	background: #ECE5D3;
+	font-weight: 300;
+	font-size: 3.5vw;
+	color: #000000;
+	text-align: center;	
+}
+	.GMSubTopic2{
+	background: #84A59D;
+	font-weight: 300;
+	font-size: 3.5vw;
+	color: #000000;
+	text-align: center;	
+
+}
+	.GM2{
+		margin-top: 10%;
+		margin-bottom: 5%;
+		text-align: center;
+	}
+@media only screen and (max-width: 768px) {
+    .fadeshowGM1{
+        display:none;
+    }
+}
+
+	.GMbutton{
+	color: #FFFFFF;
+	background: #2C2C2C;
+	border: 5px solid #FFFFFF;
+	box-shadow: -9px 4px 0px gray;
+	width: 100%;
+	}	
+	.GMbutton:hover{
+	transform: scale(1.2);
+	color: black;
+	background: white;
+	border: 5px solid black;
+	}
